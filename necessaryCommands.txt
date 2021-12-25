@@ -1,0 +1,20 @@
+npm install hjs --save(templete engine)
+npm install hogan-middleware --save(Middleware that helps to run html code)
+npm turbo-cli -g (node js generator/ scaffolding engine)
+
+turbo new projectName(create a new project using turbo cli genetator)
+
+turbo devserver(run the application on port 3000 which is localhost:3000)
+
+nodemon(run the application)
+
+
+turbo360.co--------> mdrazunmia(password)
+
+steps for hosting the site in turbo360.co
+
+1. install turbo cli globally
+2. create a turbo360 account
+3. login from turbo cli using login email and password from cmd
+4. command:  turbo app <site key>61c71bda9f513b001657a9cc
+5. command: turbo deploy
