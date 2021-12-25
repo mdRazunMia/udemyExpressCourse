@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+	</head>
+	<body class="container">
+		<h4>
+			{{timestamp}}
+		</h4>
+		<h3>Profiles:</h3>
+		<ol>
+			{{#profiles}}	<!-- Loop through the languages array elements of string -->
+
+				<li>
+					<a href="/profile/{{username}}">
+						{{name}}
+					</a>
+				</li>
+
+			{{/profiles}}
+		</ol>
+
+
+		<form action="/addprofile" method="POST">
+			<input type="text" name="name" placeholder="name" /> <br/>
+			<input type="text" name="username" placeholder="User Name" /> <br/>
+			<input type="text" name= "company"placeholder="company" /> <br/>
+			<input type="text" name ="languages" placeholder="languages"/><br />
+			<input type="submit" value="Add Profile" />
+		</form>
+
+	</body>
+</html>
